@@ -11,7 +11,7 @@ const Search = () => {
     }, []);
 
     const searchItem = () => {
-        fetch(`http://www.boredapi.com/api/activity?type=${type}`, {
+        fetch(`https://www.boredapi.com/api/activity?type=${type}`, {
             method: "GET"
         })
             .then(response => response.json())
