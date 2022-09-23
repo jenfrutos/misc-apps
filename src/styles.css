@@ -1,0 +1,107 @@
+.main {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+a {
+    color: black;
+    font-size: x-small;
+}
+
+a:hover,
+a:link {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+.nav {
+    border-bottom: ridge 3px rgba(145, 145, 145, 0.5);
+}
+
+/* Random Activity Styles*/
+.search {
+    width: 50%;
+    color: black;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+/* Calculator Styles */
+
+.calc {
+    width: 300px;
+    color: black;
+    background-color: rgb(145, 145, 145);
+    border-radius: 10px;
+}
+
+.calc-display {
+    width: 100%;
+    text-align: right;
+    background-color: rgb(88, 61, 19);
+    color: orange;
+    font: bold 25px "Courier New";
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.calc-equal {
+    grid-column: 3 / 5;
+    font-size: 20px;
+}
+
+.calc-buttons {
+    width: 100%;
+    height: calc(100% - 110px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.help-link {
+    color: white;
+
+}
+
+/* ToDo List Styles */
+.todo-app {
+    height: 100%;
+    color: black;
+    background-color: rgb(72, 117, 75, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.list {
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(231, 225, 218);
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px black;
+}
+
+ul {
+    padding: 0 10px;
+}
+
+.list-item {
+    display: flex;
+    font-size: 20px;
+    border-bottom: solid 2px rgb(226, 202, 172);
+}
+
+.list-btns {
+    display: flex;
+    margin-left: auto;
+}
+
+.list-btns>button {
+    border: none;
+    background: none;
+}
