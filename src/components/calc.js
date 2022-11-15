@@ -118,9 +118,9 @@ const Calc = () => {
     }
 
     return (
-        <>
-            <h1 className="text-center text-light mb-3">Retro Calculator</h1>
-            <div className="container calc justify-content-center py-2">
+        <div className="content-container d-flex flex-column justify-content-center align-items-center">
+            <h1 className="text-light mb-3">Retro Calculator</h1>
+            <div className="container calc py-2">
                 <div className="calc-display">
                     <Screen value={calc.num ? calc.num : calc.result} />
                 </div>
@@ -132,31 +132,32 @@ const Calc = () => {
                                     key={i}
                                     value={btn}
                                     className={
-                                        btn === "=" ? "btn btn-danger calc-equal"
-                                            : btn === "C" ? "btn btn-secondary"
-                                                : "btn btn-dark"}
+                                        btn === "=" ? "btn btn-danger calc-equal calc-btn"
+                                        : btn === "C" ? "btn btn-secondary calc-btn"
+                                        : "btn btn-dark calc-btn"}
                                     onClick={
                                         btn === "C"
-                                            ? handleReset
-                                            : btn === "+-"
-                                                ? handleInvert
-                                                : btn === "%"
-                                                    ? handlePercent
-                                                    : btn === "="
-                                                        ? handleEqual
-                                                        : btn === "/" || btn === "X" || btn === "-" || btn === "+"
-                                                            ? handleSigns
-                                                            : btn === "."
-                                                                ? handleDecimals
-                                                                : handleNumbers
-                                    }>{btn}</Button>
+                                        ? handleReset
+                                        : btn === "+-"
+                                        ? handleInvert
+                                        : btn === "%"
+                                        ? handlePercent
+                                        : btn === "="
+                                        ? handleEqual
+                                        : btn === "/" || btn === "X" || btn === "-" || btn === "+"
+                                        ? handleSigns
+                                        : btn === "."
+                                        ? handleDecimals
+                                        : handleNumbers
+                                    }>{btn}
+                                </Button>
                             );
                         })
                     }
                 </div>
             </div>
-            <div className="d-flex mt-5 justify-content-center"><a className="help-link" href="https://www.sitepoint.com/react-tutorial-build-calculator-app/">Made with Tutorial</a></div>
-        </>
+            <div className="mt-5 "><a className="help-link" href="https://www.sitepoint.com/react-tutorial-build-calculator-app/">Made with Tutorial</a></div>
+        </div>
     )
 }
 export default Calc;

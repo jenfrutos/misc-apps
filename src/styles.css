@@ -1,14 +1,21 @@
-.main {
-    background-color: black;
+body {
+    text-align: center;
+    background: rgb(14, 14, 14);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
     height: 100vh;
     overflow: hidden;
     color: whitesmoke;
+    padding: 20px 0 0 0;
+}
+.content-container{
+    height: 100%;
 }
 
 a {
     color: black;
-    font-size: x-small;
+    margin: auto 10px;
 }
 
 a:hover,
@@ -24,6 +31,7 @@ a:link {
 /* Random Activity Styles*/
 .search {
     width: 50%;
+    padding: 10px;
     color: black;
     border-radius: 10px;
     background-color: aliceblue;
@@ -33,20 +41,24 @@ a:link {
 
 .calc {
     width: 300px;
-    color: black;
-    background-color: rgb(145, 145, 145);
+    background: border-box linear-gradient(to top, rgb(109, 108, 108),80%, rgb(129, 129, 129));
+    box-shadow: 2px 5px black;
     border-radius: 10px;
 }
 
 .calc-display {
     width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgb(88, 61, 19);
     color: orange;
     font: bold 25px "Courier New";
     height: 50px;
     margin-bottom: 10px;
+    border: inset rgb(88, 61, 19);
     border-radius: 5px;
+    box-shadow: inset 0 0 25px rgb(179, 125, 38);
 }
 
 .calc-equal {
@@ -62,19 +74,23 @@ a:link {
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 10px;
 }
+.calc-btn{
+    border-width: 3px;
+    border-style: outset ;
+}
 
 .help-link {
     color: white;
-
 }
 
 /* ToDo List Styles */
 .todo-app {
-    height: 100%;
+    height: 100vh;
     color: black;
     background-color: rgb(72, 117, 75, 0.75);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
+    box-shadow: inset 0 0 20px black;
 }
 
 .list {
